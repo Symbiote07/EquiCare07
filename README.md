@@ -7,7 +7,7 @@
 ![Solution Challenge](https://img.shields.io/badge/Hack2Skill-Solution_Challenge_2026-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-**[🔴 View Live Demo Here]([https://your-live-url-goes-here.com](https://equicare07-hecirxt83hntqjvnktxppq.streamlit.app/))** *(Note: Replace with your actual Streamlit Community Cloud link)*
+**[🔴 View Live Demo Here](https://equicare07-hecirxt83hntqjvnktxppq.streamlit.app/)** *(Note: Replace with your actual Streamlit Community Cloud link)*
 
 > **Securing equitable healthcare through intelligent, real-time algorithmic auditing.**
 
