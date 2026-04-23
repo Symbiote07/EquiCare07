@@ -9,9 +9,15 @@ st.markdown("Providing **Pre-Model Data Auditing** and **Post-Model Explainabili
 
 # --- API SETUP ---
 # The API key is now hardcoded; sidebar input has been removed.
-API_KEY = "AIzaSyDJlYSmPi9vuzX2H5Swnwkr9LsyND0D-FE"
-genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel('gemini-flash-lite-latest')
+# --- API SETUP ---
+# Securely fetch the API key from Streamlit secrets
+try:
+    API_KEY = st.secrets["GEMINI_API_KEY"]
+    genai.configure(api_key=API_KEY)
+    model = genai.GenerativeModel('gemini-flash-lite-latest')
+except KeyError:
+    st.error("API Key not found. Please configure your secrets.")
+    st.stop()
 
 # --- TABS FOR PRE & POST MODEL AUDITING ---
 tab1, tab2 = st.tabs(["📊 Phase 1: Pre-Model Data Audit", "🔍 Phase 2: Post-Model Explainability Trace"])
